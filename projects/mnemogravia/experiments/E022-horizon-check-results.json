@@ -1,0 +1,28 @@
+{
+  "model": "E022-scoped-horizon-v1",
+  "kind": "stipulated_fictional_model_checks_not_empirical_results",
+  "named_scenarios": {
+    "baseline": "in_scope",
+    "manager_changed": "in_scope",
+    "purpose_changed": "review_required",
+    "affected_changed": "review_required",
+    "irreversible_use": "review_required",
+    "before_start": "review_required",
+    "at_expiry": "review_required",
+    "new_evidence": "review_required",
+    "mandate_withdrawn": "review_required",
+    "objection": "review_required"
+  },
+  "contexts_exhausted": 192,
+  "manager_variants": 3,
+  "decisions_checked": 576,
+  "in_scope_decisions": 3,
+  "review_required_decisions": 573,
+  "invalid_interval_rejected": true,
+  "invariants": [
+    "identity_independent_under_same_mandate",
+    "scope_changes_trigger_review",
+    "authorization_never_promotes_truth"
+  ],
+  "status": "PASS"
+}
