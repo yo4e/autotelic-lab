@@ -1,0 +1,134 @@
+{
+  "model": "E023-objection-access-v1",
+  "kind": "constructed_fictional_cases_not_empirical_results",
+  "weeks": 16,
+  "weekly_review_capacity": 1,
+  "material_claimants": 5,
+  "noise_petitions": 13,
+  "policies": [
+    {
+      "policy": "open_automatic_stay",
+      "material_filed": 3,
+      "material_heard": 3,
+      "material_unheard": [
+        "hard_to_articulate",
+        "time_poor"
+      ],
+      "held_weeks": 16,
+      "hold_week_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "maximum_queue": 5,
+      "pending_after_week_15": 0,
+      "material_review_delay_weeks": {
+        "cash_poor": 0,
+        "resourced": 1,
+        "late_affected": 2
+      },
+      "counts": {
+        "admitted_for_review": 16,
+        "filed_petitions": 16,
+        "noise_reviews": 13,
+        "reviews": 16,
+        "time_barrier": 2
+      }
+    },
+    {
+      "policy": "paid_automatic_stay",
+      "material_filed": 1,
+      "material_heard": 1,
+      "material_unheard": [
+        "cash_poor",
+        "hard_to_articulate",
+        "late_affected",
+        "time_poor"
+      ],
+      "held_weeks": 14,
+      "hold_week_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "maximum_queue": 3,
+      "pending_after_week_15": 0,
+      "material_review_delay_weeks": {
+        "resourced": 0
+      },
+      "counts": {
+        "admitted_for_review": 14,
+        "fee_barrier": 4,
+        "filed_petitions": 14,
+        "noise_reviews": 13,
+        "reviews": 14
+      }
+    },
+    {
+      "policy": "assisted_scoped_review",
+      "material_filed": 5,
+      "material_heard": 4,
+      "material_unheard": [
+        "hard_to_articulate"
+      ],
+      "held_weeks": 5,
+      "hold_week_indices": [
+        0,
+        1,
+        2,
+        4,
+        6
+      ],
+      "maximum_queue": 3,
+      "pending_after_week_15": 0,
+      "material_review_delay_weeks": {
+        "time_poor": 0,
+        "cash_poor": 1,
+        "resourced": 2,
+        "late_affected": 0
+      },
+      "counts": {
+        "admitted_for_review": 5,
+        "duplicates_merged": 11,
+        "filed_petitions": 18,
+        "material_screened_out": 1,
+        "noise_reviews": 1,
+        "reviews": 5,
+        "screened_out": 2
+      }
+    }
+  ],
+  "checks": [
+    "cost_filters_capacity_not_merit",
+    "wealthy_repetition_survives_fee",
+    "dedup_reduces_repeat_holds",
+    "triage_has_false_negative_and_positive",
+    "review_does_not_imply_truth",
+    "finite_horizon_only"
+  ],
+  "status": "PASS"
+}
