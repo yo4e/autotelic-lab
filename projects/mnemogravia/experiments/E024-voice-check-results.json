@@ -1,0 +1,68 @@
+{
+  "model": "E024-mediated-voice-v1",
+  "kind": "authored_fixtures_not_empirical_observations",
+  "named_case_columns": [
+    "submission_permitted",
+    "interpretation_endorsed"
+  ],
+  "named_cases": {
+    "unconfirmed": [
+      false,
+      false
+    ],
+    "submit_only": [
+      true,
+      false
+    ],
+    "interpretation_only": [
+      false,
+      true
+    ],
+    "both": [
+      true,
+      true
+    ],
+    "withdrawn": [
+      false,
+      false
+    ],
+    "stale_draft": [
+      false,
+      false
+    ],
+    "stale_source": [
+      false,
+      false
+    ],
+    "different_purpose": [
+      false,
+      false
+    ]
+  },
+  "packet_variants": 4,
+  "grant_states_per_variant": 16,
+  "finite_states_checked": 64,
+  "malformed_packets_rejected": [
+    "missing_residual",
+    "false_quote",
+    "unknown_reference",
+    "origin_laundering",
+    "duplicate_source_id"
+  ],
+  "counterexample": "A semantically false paraphrase with valid metadata passes.",
+  "verified": [
+    "scope_separation",
+    "version_binding",
+    "origin_not_rewritten_by_endorsement",
+    "residual_not_silence",
+    "no_truth_inference",
+    "no_mutation"
+  ],
+  "not_verified": [
+    "semantic_fidelity",
+    "real_consent",
+    "authenticity",
+    "fairness"
+  ],
+  "status": "PASS"
+}
