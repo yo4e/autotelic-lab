@@ -1,0 +1,62 @@
+{
+  "model": "E025-second-original-v1",
+  "kind": "authored_claim_lineage_fixtures_not_empirical_results",
+  "named_relations": {
+    "direct_echo": "downstream_of_draft",
+    "indirect_echo": "downstream_of_draft",
+    "shared_original": "shared_ancestor",
+    "separate_archive": "no_recorded_link",
+    "same_record": "same_record",
+    "original_already_used": "already_used_by_draft"
+  },
+  "mixed_packet": {
+    "present_position_as_declared": "adopted",
+    "relations": {
+      "R": "downstream_of_draft",
+      "E": "no_recorded_link"
+    },
+    "linked_components": [
+      "R"
+    ],
+    "separate_inquiry_candidates": [
+      "E"
+    ],
+    "independence": "not_certified",
+    "truth": "not_assessed"
+  },
+  "graph_variants": 32,
+  "adoption_states": 4,
+  "finite_states_checked": 128,
+  "malformed_inputs_rejected": [
+    "duplicate_id",
+    "unknown_parent",
+    "self_reference",
+    "backwards_link",
+    "duplicate_parent",
+    "unknown_candidate",
+    "duplicate_candidate",
+    "invalid_adoption"
+  ],
+  "missing_link_counterexample": {
+    "before": "downstream_of_draft",
+    "after": "no_recorded_link",
+    "independence": "not_certified"
+  },
+  "verified": [
+    "direct_and_indirect_paths",
+    "claim_component_partition",
+    "adoption_does_not_rewrite_lineage",
+    "speaker_rename_invariant",
+    "no_truth_or_independence_promotion",
+    "no_history_mutation"
+  ],
+  "not_verified": [
+    "actual_authorship",
+    "free_consent",
+    "historical_truth",
+    "semantic_fidelity",
+    "complete_dependencies",
+    "statistical_independence"
+  ],
+  "status": "PASS"
+}
