@@ -1,0 +1,118 @@
+{
+  "model": "E026-scoped-withdrawal-v1",
+  "kind": "authored_fixtures_not_empirical_results",
+  "named_cases": {
+    "unreceived": {
+      "values": {
+        "pause_request": true,
+        "name_permission": true,
+        "preserve_request": true
+      },
+      "pending": [],
+      "new_use": "requires_current_confirmation"
+    },
+    "received_not_applied": {
+      "values": {
+        "pause_request": true,
+        "name_permission": true,
+        "preserve_request": true
+      },
+      "pending": [
+        "W2"
+      ],
+      "new_use": "blocked_by_known_withdrawal"
+    },
+    "applied": {
+      "values": {
+        "pause_request": false,
+        "name_permission": false,
+        "preserve_request": true
+      },
+      "pending": [],
+      "new_use": "blocked_by_known_withdrawal"
+    },
+    "before_withdrawal": {
+      "values": {
+        "pause_request": true,
+        "name_permission": true,
+        "preserve_request": true
+      },
+      "pending": [],
+      "new_use": "requires_current_confirmation"
+    },
+    "request_only": {
+      "values": {
+        "pause_request": false,
+        "name_permission": true,
+        "preserve_request": true
+      },
+      "pending": [],
+      "new_use": "blocked_by_known_withdrawal"
+    },
+    "permission_only": {
+      "values": {
+        "pause_request": true,
+        "name_permission": false,
+        "preserve_request": true
+      },
+      "pending": [],
+      "new_use": "blocked_by_known_withdrawal"
+    }
+  },
+  "delivery_configurations": 81,
+  "scope_variants": 3,
+  "global_states_checked": 243,
+  "replica_views_checked": 972,
+  "partial_delivery_at_6": {
+    "registered": 4,
+    "received": 3,
+    "applied": 2,
+    "unapplied": [
+      "D2",
+      "D3"
+    ],
+    "complete_within_registry": false,
+    "global_completion": "not_certified"
+  },
+  "late_and_duplicate_grant_does_not_resurrect": true,
+  "hidden_copy_counterexample": {
+    "registry_complete": true,
+    "unregistered_copy_still_has_old_request": true,
+    "global_completion": "not_certified"
+  },
+  "undelivered_update_counterexample": {
+    "local_views_identical": true,
+    "source_states_differ_at_query": true,
+    "current_position": "not_certified_from_local_cache"
+  },
+  "malformed_inputs_rejected": [
+    "duplicate_revision",
+    "duplicate_id",
+    "unknown_scope",
+    "wrong_target",
+    "backwards_event_time",
+    "unknown_receipt",
+    "premature_receipt",
+    "apply_without_receipt",
+    "apply_before_receipt"
+  ],
+  "verified": [
+    "scoped_changes",
+    "receipt_is_not_application",
+    "dated_history_retained",
+    "order_and_retry_invariance",
+    "no_cache_to_present_promotion",
+    "no_truth_inference",
+    "bounded_completion_only"
+  ],
+  "not_verified": [
+    "authenticity",
+    "free_consent",
+    "semantic_scope_extraction",
+    "all_copies_discovered",
+    "actual_human_reading",
+    "legal_effect",
+    "later_reendorsement"
+  ],
+  "status": "PASS"
+}
