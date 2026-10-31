@@ -1,0 +1,111 @@
+{
+  "model": "E027-correction-routing-v1",
+  "kind": "authored_display_fixtures_not_empirical_results",
+  "named_comparison": {
+    "full": {
+      "notice_recipients": 4,
+      "target_linked_recipients": 4,
+      "unresolved_notice_recipients": 0,
+      "new_old_text_recipients": 4,
+      "new_old_text_with_link": 2,
+      "new_old_text_without_link": 2,
+      "detail_displays": 0
+    },
+    "reference": {
+      "notice_recipients": 4,
+      "target_linked_recipients": 2,
+      "unresolved_notice_recipients": 2,
+      "new_old_text_recipients": 0,
+      "new_old_text_with_link": 0,
+      "new_old_text_without_link": 0,
+      "detail_displays": 0
+    },
+    "layered": {
+      "notice_recipients": 4,
+      "target_linked_recipients": 4,
+      "unresolved_notice_recipients": 0,
+      "new_old_text_recipients": 2,
+      "new_old_text_with_link": 1,
+      "new_old_text_without_link": 1,
+      "detail_displays": 2
+    }
+  },
+  "configurations": 2592,
+  "strategy_runs": 7776,
+  "reader_views": 62208,
+  "additional_rename_and_replay_runs": 15552,
+  "counterexamples": {
+    "lookup_unavailable": {
+      "notice_recipients": 4,
+      "target_linked_recipients": 2,
+      "unresolved_notice_recipients": 2,
+      "new_old_text_recipients": 0,
+      "new_old_text_with_link": 0,
+      "new_old_text_without_link": 0,
+      "detail_displays": 0
+    },
+    "new_exposure_with_context_intact": {
+      "notice_recipients": 8,
+      "target_linked_recipients": 8,
+      "unresolved_notice_recipients": 0,
+      "new_old_text_recipients": 6,
+      "new_old_text_with_link": 6,
+      "new_old_text_without_link": 0,
+      "detail_displays": 0
+    },
+    "equal_marginals_different_overlap": {
+      "overlap": {
+        "notice_recipients": 1,
+        "target_linked_recipients": 1,
+        "unresolved_notice_recipients": 0,
+        "new_old_text_recipients": 1,
+        "new_old_text_with_link": 1,
+        "new_old_text_without_link": 0
+      },
+      "disjoint": {
+        "notice_recipients": 1,
+        "target_linked_recipients": 1,
+        "unresolved_notice_recipients": 0,
+        "new_old_text_recipients": 1,
+        "new_old_text_with_link": 0,
+        "new_old_text_without_link": 1
+      }
+    },
+    "no_notice": {
+      "new_old_text_recipients": 0,
+      "target_linked_recipients": 0
+    }
+  },
+  "malformed_inputs_rejected": [
+    "wrong_target",
+    "wrong_update",
+    "scope_expansion",
+    "scope_omission",
+    "altered_quote",
+    "orphan_scope",
+    "duplicate_reader",
+    "invalid_strategy",
+    "invalid_route",
+    "invalid_reader_count",
+    "non_boolean_lookup"
+  ],
+  "verified": [
+    "separate_notice_linkage_and_text_display",
+    "recipient_overlap",
+    "scoped_update_preserved",
+    "extraction_cannot_create_absent_text",
+    "rename_and_replay_invariance",
+    "no_history_mutation"
+  ],
+  "not_verified": [
+    "reading_or_belief",
+    "harm_or_net_benefit",
+    "authenticity",
+    "semantic_inference_from_ID_or_scope",
+    "index_correctness",
+    "access_legitimacy",
+    "all_network_paths",
+    "real_correction_effect"
+  ],
+  "status": "PASS"
+}
