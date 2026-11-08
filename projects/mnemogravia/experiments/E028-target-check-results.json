@@ -1,0 +1,67 @@
+{
+  "model": "E028-orphaned-correction-v1",
+  "kind": "authored_binding_fixtures_not_empirical_results",
+  "named_cases": {
+    "confirmed_original": "ready_under_assumptions",
+    "missing_table": "unresolved",
+    "one_reconstructed_candidate": "proposal_only",
+    "other_speaker_same_text": "identity_mismatch",
+    "reused_local_number": "identity_mismatch",
+    "different_revision": "identity_mismatch",
+    "two_targets": "conflicting_bindings",
+    "target_not_accessible": "target_unavailable",
+    "confirmed_reconstruction": "ready_under_assumptions",
+    "wrong_content": "content_mismatch",
+    "wrong_time": "time_mismatch",
+    "other_namespace_only": "unresolved"
+  },
+  "finite_states_checked": 192,
+  "ready_under_assumptions_states": 6,
+  "conflict_order_checks": 48,
+  "counterexamples": {
+    "same_text_different_occurrences": {
+      "records": 4,
+      "distinct_text_fingerprints": 1
+    },
+    "single_surviving_candidate": "proposal_only",
+    "lost_table_two_worlds": {
+      "visible_input_identical": true,
+      "intended_targets": [
+        "A",
+        "C"
+      ],
+      "output": "unresolved"
+    },
+    "coherent_false_binding_passes": "ready_under_assumptions"
+  },
+  "malformed_inputs_rejected": [
+    "empty_scope",
+    "unknown_scope",
+    "duplicate_scope",
+    "duplicate_occurrence",
+    "invalid_revision",
+    "invalid_fingerprint",
+    "invalid_basis",
+    "non_boolean_confirmation",
+    "invalid_values"
+  ],
+  "verified": [
+    "proposal_is_not_application",
+    "qualified_occurrence_and_version",
+    "scope_is_not_expanded",
+    "conflicts_are_not_majority_votes",
+    "retry_order_and_renaming_invariance",
+    "history_preserved",
+    "unresolved_is_not_current_permission"
+  ],
+  "not_verified": [
+    "binding_authenticity",
+    "free_consent",
+    "semantic_matching",
+    "access_rights",
+    "complete_catalog",
+    "operational_safety",
+    "legal_effect"
+  ],
+  "status": "PASS"
+}
