@@ -1,0 +1,129 @@
+{
+  "model": "E029-authored-press-deadline",
+  "fixed_for_all_cases": {
+    "archived_occurrences": [
+      "A",
+      "C"
+    ],
+    "originals": "retained_unchanged",
+    "notice": "received_target_unresolved",
+    "exhibition": "undecided",
+    "deadline": 9
+  },
+  "cases": [
+    {
+      "order": "handle_then_press",
+      "policy": "stop_all",
+      "desk": {
+        "lobby": "service_info_only",
+        "locked_issue": "service_info_only",
+        "closed_copy_made": false
+      },
+      "worlds": {
+        "A": {
+          "withdrawn_A_attribution_printed": 0,
+          "unaffected_A_print_opportunity_forgone": 0
+        },
+        "C": {
+          "withdrawn_A_attribution_printed": 0,
+          "unaffected_A_print_opportunity_forgone": 1
+        }
+      }
+    },
+    {
+      "order": "handle_then_press",
+      "policy": "continue_all",
+      "desk": {
+        "lobby": "service_info_and_P_as_current_supporter_from_A",
+        "locked_issue": "service_info_and_P_as_current_supporter_from_A",
+        "closed_copy_made": true
+      },
+      "worlds": {
+        "A": {
+          "withdrawn_A_attribution_printed": 1,
+          "unaffected_A_print_opportunity_forgone": 0
+        },
+        "C": {
+          "withdrawn_A_attribution_printed": 0,
+          "unaffected_A_print_opportunity_forgone": 0
+        }
+      }
+    },
+    {
+      "order": "handle_then_press",
+      "policy": "by_use",
+      "desk": {
+        "lobby": "service_info_only",
+        "locked_issue": "service_info_only",
+        "closed_copy_made": true
+      },
+      "worlds": {
+        "A": {
+          "withdrawn_A_attribution_printed": 0,
+          "unaffected_A_print_opportunity_forgone": 0
+        },
+        "C": {
+          "withdrawn_A_attribution_printed": 0,
+          "unaffected_A_print_opportunity_forgone": 1
+        }
+      }
+    },
+    {
+      "order": "press_then_handle",
+      "policy": "stop_all",
+      "desk": {
+        "lobby": "service_info_only",
+        "locked_issue": "service_info_and_P_as_current_supporter_from_A",
+        "closed_copy_made": false
+      },
+      "worlds": {
+        "A": {
+          "withdrawn_A_attribution_printed": 1,
+          "unaffected_A_print_opportunity_forgone": 0
+        },
+        "C": {
+          "withdrawn_A_attribution_printed": 0,
+          "unaffected_A_print_opportunity_forgone": 0
+        }
+      }
+    },
+    {
+      "order": "press_then_handle",
+      "policy": "continue_all",
+      "desk": {
+        "lobby": "service_info_and_P_as_current_supporter_from_A",
+        "locked_issue": "service_info_and_P_as_current_supporter_from_A",
+        "closed_copy_made": true
+      },
+      "worlds": {
+        "A": {
+          "withdrawn_A_attribution_printed": 1,
+          "unaffected_A_print_opportunity_forgone": 0
+        },
+        "C": {
+          "withdrawn_A_attribution_printed": 0,
+          "unaffected_A_print_opportunity_forgone": 0
+        }
+      }
+    },
+    {
+      "order": "press_then_handle",
+      "policy": "by_use",
+      "desk": {
+        "lobby": "service_info_only",
+        "locked_issue": "service_info_and_P_as_current_supporter_from_A",
+        "closed_copy_made": true
+      },
+      "worlds": {
+        "A": {
+          "withdrawn_A_attribution_printed": 1,
+          "unaffected_A_print_opportunity_forgone": 0
+        },
+        "C": {
+          "withdrawn_A_attribution_printed": 0,
+          "unaffected_A_print_opportunity_forgone": 0
+        }
+      }
+    }
+  ]
+}
