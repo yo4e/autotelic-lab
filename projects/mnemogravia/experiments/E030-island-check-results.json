@@ -1,0 +1,65 @@
+{
+  "model": "E030-islands-and-missed-editions-v1",
+  "kind": "fictional_schedules_not_empirical_delivery_or_reading",
+  "combinations_checked": 18,
+  "first_named_public_availability_west": {
+    "latest_only/west_closed_day_3": null,
+    "latest_only/west_open_day_3": null,
+    "backfill/west_closed_day_3": 4,
+    "backfill/west_open_day_3": 3,
+    "supplement/west_closed_day_3": 2,
+    "supplement/west_open_day_3": 2
+  },
+  "example": {
+    "binding": "verified_C",
+    "plan": "backfill",
+    "access": "west_closed_day_3",
+    "I1_named_at_source": true,
+    "source_publication_day_I1": 1,
+    "ports": {
+      "East": {
+        "first_named_physically_received": 1,
+        "first_named_publicly_available": 1,
+        "I1_physically_received": 1,
+        "I1_publicly_available": 1,
+        "latest_issue_at_day5": "I2",
+        "received_objects": [
+          "I0",
+          "I1",
+          "I2"
+        ]
+      },
+      "West": {
+        "first_named_physically_received": 3,
+        "first_named_publicly_available": 4,
+        "I1_physically_received": 3,
+        "I1_publicly_available": 4,
+        "latest_issue_at_day5": "I2",
+        "received_objects": [
+          "I0",
+          "I1",
+          "I2"
+        ]
+      }
+    },
+    "day0_missed_issue_rewritten": false,
+    "read_or_understood": "not_measured"
+  },
+  "counterexamples": {
+    "latest_only_no_named_form_by_day5": true,
+    "same_latest_I2_different_I1_access": true,
+    "backfilled_I1_reaches_west_on_day3_but_accessible_on_day4": true,
+    "supplement_is_not_I1": true,
+    "no_retroactive_day0_slot": true
+  },
+  "invalid_configurations_rejected": 3,
+  "not_verified": [
+    "real consent",
+    "binding authenticity",
+    "readers or comprehension",
+    "harms or benefits",
+    "unobserved routes",
+    "rights to publish"
+  ],
+  "status": "PASS"
+}
